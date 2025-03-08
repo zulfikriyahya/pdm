@@ -1,0 +1,28 @@
+models:
+  TahunPelajaran:
+    nama: string
+    is_active: boolean
+    relationships:
+      hasMany: Kelas
+
+  Kelas:
+    nama: string
+    tingkat: enum:VII,VIII,IX
+    tahun_pelajaran_id: id foreign:tahun_pelajarans
+    relationships:
+      belongsTo: TahunPelajaran
+      hasMany: Siswa
+
+  Siswa:
+    nama: string
+    nisn: string
+    nik: string
+    tempat_lahir: string
+    tanggal_lahir: date
+    is_active: boolean
+    jenis_kelamin: enum:Laki-laki,Perempuan
+    nama_ayah: string
+    nama_ibu: string
+    kelas_id: id foreign:kelas
+    relationships:
+      belongsTo: Kelas

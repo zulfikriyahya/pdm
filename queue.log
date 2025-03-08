@@ -1,0 +1,132 @@
+nohup: ignoring input
+  2025-01-23 18:28:09 Illuminate\Bus\ChainedBatch .................... RUNNING
+  2025-01-23 18:28:09 Illuminate\Bus\ChainedBatch ............... 35.75ms DONE
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\PrepareCsvExport . RUNNING
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\PrepareCsvExport  22.36ms DONE
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv .. 142.49ms DONE
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv .. 116.06ms DONE
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv .. 102.67ms DONE
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv .. 116.77ms DONE
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCsv ... 19.17ms DONE
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCompletion . RUNNING
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\ExportCompletion  18.96ms DONE
+  2025-01-23 18:28:09 Filament\Notifications\DatabaseNotification .... RUNNING
+  2025-01-23 18:28:09 Filament\Notifications\DatabaseNotification  5.50ms DONE
+  2025-01-23 18:28:09 Filament\Notifications\Events\DatabaseNotificationsSent  RUNNING
+  2025-01-23 18:28:09 Filament\Notifications\Events\DatabaseNotificationsSent  7.03ms DONE
+  2025-01-23 18:28:09 Filament\Actions\Exports\Jobs\CreateXlsxFile ... RUNNING
+  2025-01-23 18:28:10 Filament\Actions\Exports\Jobs\CreateXlsxFile  240.50ms DONE
+  2025-01-23 18:28:49 Illuminate\Bus\ChainedBatch .................... RUNNING
+  2025-01-23 18:28:49 Illuminate\Bus\ChainedBatch ............... 10.97ms DONE
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\PrepareCsvExport . RUNNING
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\PrepareCsvExport  19.16ms DONE
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ... 76.75ms DONE
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ... 68.41ms DONE
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ... 65.34ms DONE
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ... 65.95ms DONE
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCsv ... 14.97ms DONE
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCompletion . RUNNING
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\ExportCompletion  9.16ms DONE
+  2025-01-23 18:28:49 Filament\Notifications\DatabaseNotification .... RUNNING
+  2025-01-23 18:28:49 Filament\Notifications\DatabaseNotification  3.48ms DONE
+  2025-01-23 18:28:49 Filament\Notifications\Events\DatabaseNotificationsSent  RUNNING
+  2025-01-23 18:28:49 Filament\Notifications\Events\DatabaseNotificationsSent  2.64ms DONE
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\CreateXlsxFile ... RUNNING
+  2025-01-23 18:28:49 Filament\Actions\Exports\Jobs\CreateXlsxFile  109.54ms DONE
+  2025-01-23 19:08:58 Illuminate\Bus\ChainedBatch .................... RUNNING
+  2025-01-23 19:08:58 Illuminate\Bus\ChainedBatch ............... 12.96ms DONE
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\PrepareCsvExport . RUNNING
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\PrepareCsvExport  13.47ms DONE
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv .. 104.53ms DONE
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv .. 130.20ms DONE
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv ... 98.76ms DONE
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv .. 111.30ms DONE
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCsv ... 21.29ms DONE
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCompletion . RUNNING
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\ExportCompletion  9.45ms DONE
+  2025-01-23 19:08:58 Filament\Notifications\DatabaseNotification .... RUNNING
+  2025-01-23 19:08:58 Filament\Notifications\DatabaseNotification  3.76ms DONE
+  2025-01-23 19:08:58 Filament\Notifications\Events\DatabaseNotificationsSent  RUNNING
+  2025-01-23 19:08:58 Filament\Notifications\Events\DatabaseNotificationsSent  3.53ms DONE
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\CreateXlsxFile ... RUNNING
+  2025-01-23 19:08:58 Filament\Actions\Exports\Jobs\CreateXlsxFile  245.29ms DONE
+  2025-01-23 19:13:47 Illuminate\Bus\ChainedBatch .................... RUNNING
+  2025-01-23 19:13:47 Illuminate\Bus\ChainedBatch ............... 27.19ms DONE
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\PrepareCsvExport . RUNNING
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\PrepareCsvExport  18.58ms DONE
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv .. 102.56ms DONE
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv ... 99.27ms DONE
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv .. 117.95ms DONE
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv .. 102.15ms DONE
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCsv ... 15.92ms DONE
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCompletion . RUNNING
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\ExportCompletion  7.04ms DONE
+  2025-01-23 19:13:47 Filament\Notifications\DatabaseNotification .... RUNNING
+  2025-01-23 19:13:47 Filament\Notifications\DatabaseNotification  2.95ms DONE
+  2025-01-23 19:13:47 Filament\Notifications\Events\DatabaseNotificationsSent  RUNNING
+  2025-01-23 19:13:47 Filament\Notifications\Events\DatabaseNotificationsSent  2.46ms DONE
+  2025-01-23 19:13:47 Filament\Actions\Exports\Jobs\CreateXlsxFile ... RUNNING
+  2025-01-23 19:13:48 Filament\Actions\Exports\Jobs\CreateXlsxFile  263.95ms DONE
+  2025-01-24 13:15:57 Illuminate\Bus\ChainedBatch .................... RUNNING
+  2025-01-24 13:15:57 Illuminate\Bus\ChainedBatch ............... 16.57ms DONE
+  2025-01-24 13:15:57 Filament\Actions\Exports\Jobs\PrepareCsvExport . RUNNING
+  2025-01-24 13:15:57 Filament\Actions\Exports\Jobs\PrepareCsvExport  21.22ms DONE
+  2025-01-24 13:15:57 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-24 13:15:57 Filament\Actions\Exports\Jobs\ExportCsv .. 132.36ms DONE
+  2025-01-24 13:15:57 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-24 13:15:57 Filament\Actions\Exports\Jobs\ExportCsv .. 165.77ms DONE
+  2025-01-24 13:15:57 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\ExportCsv .. 141.43ms DONE
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\ExportCsv .. 147.06ms DONE
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\ExportCsv ........ RUNNING
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\ExportCsv ... 21.73ms DONE
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\ExportCompletion . RUNNING
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\ExportCompletion  11.08ms DONE
+  2025-01-24 13:15:58 Filament\Notifications\DatabaseNotification .... RUNNING
+  2025-01-24 13:15:58 Filament\Notifications\DatabaseNotification  3.99ms DONE
+  2025-01-24 13:15:58 Filament\Notifications\Events\DatabaseNotificationsSent  RUNNING
+  2025-01-24 13:15:58 Filament\Notifications\Events\DatabaseNotificationsSent  3.79ms DONE
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\CreateXlsxFile ... RUNNING
+  2025-01-24 13:15:58 Filament\Actions\Exports\Jobs\CreateXlsxFile  266.69ms DONE
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand()
+
