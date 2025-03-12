@@ -81,31 +81,28 @@ class KelasResource extends Resource
                             ->label('Tingkat'),
                         Tables\Columns\TextColumn::make('tahunPelajaran.nama')
                             ->label('Tahun Pelajaran'),
-                            
-                        
+                        Tables\Columns\TextColumn::make('total_pria')
+                            ->label('Total Pria')
+                            ->getStateUsing(function ($record) {
+                                return $record->siswa()->where('jenis_kelamin', 'Laki-laki')->count();
+                            })
+                            ->badge(),
 
-Tables\Columns\TextColumn::make('total_pria')
-    ->label('Total Pria')
-    ->getStateUsing(function ($record) {
-        return $record->siswa()->where('jenis_kelamin', 'Laki-laki')->count();
-    })
-    ->badge(),
+                        Tables\Columns\TextColumn::make('total_wanita')
+                            ->label('Total Wanita')
+                            ->getStateUsing(function ($record) {
+                                return $record->siswa()->where('jenis_kelamin', 'Perempuan')->count();
+                            })
+                            ->badge(),
 
-Tables\Columns\TextColumn::make('total_wanita')
-    ->label('Total Wanita')
-    ->getStateUsing(function ($record) {
-        return $record->siswa()->where('jenis_kelamin', 'Perempuan')->count();
-    })
-    ->badge(),
-                      
-                      Tables\Columns\TextColumn::make('total_siswa')
-    ->label('Total Siswa')
-    ->getStateUsing(function ($record) {
-        return $record->siswa()->count();
-    })
-    ->badge(),  
-                        
-                        
+                        Tables\Columns\TextColumn::make('total_siswa')
+                            ->label('Total Siswa')
+                            ->getStateUsing(function ($record) {
+                                return $record->siswa()->count();
+                            })
+                            ->badge(),
+
+
                         Tables\Columns\TextColumn::make('created_at')
                             ->dateTime()
                             ->sortable()
@@ -132,7 +129,7 @@ Tables\Columns\TextColumn::make('total_wanita')
                             Tables\Actions\ViewAction::make(),
                             Tables\Actions\EditAction::make(),
                             Tables\Actions\DeleteAction::make()
-                            ->visible(Siswa::count() < 0)
+                                ->visible(Siswa::count() < 0)
                         ])
                             ->visible(Auth::user()->is_admin === 'Administrator')
                     ], position: ActionsPosition::BeforeColumns)

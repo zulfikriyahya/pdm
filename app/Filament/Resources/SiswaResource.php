@@ -7,11 +7,14 @@ use Filament\Tables;
 use App\Models\Siswa;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Illuminate\Http\Request;
 use App\Models\TahunPelajaran;
 use Filament\Resources\Resource;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Facades\Auth;
 use Filament\Forms\Components\Section;
+use App\Filament\Exports\SiswaExporter;
 use Filament\Tables\Actions\ActionGroup;
 use Filament\Forms\Components\FileUpload;
 use Filament\Tables\Filters\SelectFilter;
@@ -20,9 +23,6 @@ use Filament\Tables\Enums\ActionsPosition;
 use Filament\Tables\Filters\TrashedFilter;
 use App\Filament\Resources\SiswaResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Exports\SiswaExporter;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
 
 class SiswaResource extends Resource
 {
@@ -128,30 +128,31 @@ class SiswaResource extends Resource
                             ->required(fn($record) => $record !== null)
                             ->columnSpanFull(),
                     ])->columns(2),
-                    
+
                 Section::make('Unggah File')
                     ->description('Ukuran maksimal unggah : 10 MB/File.')
                     ->icon('heroicon-m-photo')
                     ->iconColor('primary')
                     ->schema([
-                        // FileUpload::make('file_foto')
-                        //     ->label('Foto Profile')
-                        //     ->image()
-                        //     ->fetchFileInformation(false)
-                        //     ->imageEditor()
-                        //     ->downloadable(true)
-                        //     ->imageEditorAspectRatios([
-                        //         null,
-                        //         '1:1',
-                        //         '4:3',
-                        //         '3:4',
-                        //     ])
-                        //     ->directory(fn() => 'img/' . Auth::user()->username . '/foto')
-                        //     ->maxSize(10240)
-                        //     ->minSize(10)
-                        //     ->validationMessages([
-                        //         'required' => 'Silakan unggah file Foto Profil anda.',
-                        //     ]),
+                        FileUpload::make('file_foto')
+                            ->label('Foto Profile')
+                            ->image()
+                            ->fetchFileInformation(false)
+                            ->imageEditor()
+                            ->downloadable(true)
+                            ->imageEditorAspectRatios([
+                                null,
+                                '1:1',
+                                '4:3',
+                                '3:4',
+                            ])
+                            ->directory(fn() => 'img/' . Auth::user()->username . '/foto')
+                            ->maxSize(10240)
+                            ->minSize(10)
+                            ->required()
+                            ->validationMessages([
+                                'required' => 'Silakan unggah file Foto anda.',
+                            ]),
                         FileUpload::make('file_kk')
                             ->label('Kartu Keluarga')
                             ->directory('img/kk')
@@ -194,7 +195,7 @@ class SiswaResource extends Resource
                             ->required(),
                     ])
                     ->columns(2)
-                  ->visible(fn() => DB::table('siswas')->where('kelas_id', [22, 23, 24, 25, 26, 27, 28, 29, 30, 31])->exists()),
+                    ->visible(fn() => DB::table('siswas')->where('kelas_id', [22, 23, 24, 25, 26, 27, 28, 29, 30, 31])->exists()),
 
                 Section::make('Verifikasi Data')
                     ->description('Harap periksa kembali data yang telah diisi!')
@@ -221,11 +222,11 @@ class SiswaResource extends Resource
                             ->label('Status Verval')
                             ->alignCenter()
                             ->boolean(),
-                        // Tables\Columns\ImageColumn::make('file_foto')
-                        //     ->label('Foto')
-                        //     ->circular()
-                        //     ->alignCenter()
-                        //     ->defaultImageUrl('/favicon.ico'),
+                        Tables\Columns\ImageColumn::make('file_foto')
+                            ->label('Foto')
+                            ->circular()
+                            ->alignCenter()
+                            ->defaultImageUrl('/img/default.png'),
                         Tables\Columns\TextColumn::make('kelas.nama')
                             ->label('Kelas')
                             ->sortable(),

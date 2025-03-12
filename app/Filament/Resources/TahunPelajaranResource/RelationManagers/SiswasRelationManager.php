@@ -202,7 +202,7 @@ class SiswasRelationManager extends RelationManager
                     ->label('Foto')
                     ->alignCenter()
                     ->circular()
-                    ->defaultImageUrl('/favicon.ico'),
+                    ->defaultImageUrl('/img/default.png'),
                 Tables\Columns\TextColumn::make('kelas.nama')
                     ->label('Kelas'),
                 Tables\Columns\TextColumn::make('nama')
